@@ -1,0 +1,327 @@
+/*HomePage and navigation buttons*/
+
+body{
+    margin-left:220px;
+    margin-right:220px;
+    font-family: Arial,georgia,Arial;
+    background-color: #f5f7fa;
+    color: #212121;
+}
+header {
+    font-size: 30px;
+    text-align: center;
+}
+
+header h2{
+    color:#b71c1c;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    font-weight:bold;
+}
+
+header p{
+    margin-top:0px;
+    font-size:20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.Welcome{
+    padding-top:50px;
+    font-size:40px;
+}
+
+.Thankyou{
+    padding-top:30px;
+    font-size:40px;
+}
+
+.navigation {
+    background-color: #c62828;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight:bold;
+}
+
+.navigation form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #b71c1c;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #ef5350;
+    color:white;
+    border-color:#b71c1c;
+    font-weight:bold;
+    }
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+.rightPane {
+    background-color: #c62828;
+    border: solid 2px black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+}
+
+.intro {
+    background-color: white;
+    border: 2px solid #c62828;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.guide {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.guide h2 {
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.item {
+    background-color: #ffcdd2;
+    border: 1px solid #ef9a9a;
+    border-radius: 8px;
+    height: 100px;
+    width: 300px;           
+}
+
+/*registration and donor list*/
+
+.document {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.document form {
+    background-color:white;
+    border:2px solid #c62828;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    border-radius:10px;
+    margin-left:350px;
+    margin-right:350px;
+    padding:20px;
+    text-align: left;
+    align-items:left;
+    border-radius:7px;
+}
+
+.document form h2{
+    color:#b71c1c;
+    margin-bottom:20px;
+    text-align:center;
+    align-items:top;
+}
+
+.textfield{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+.text-input{
+    margin-bottom:3px;
+}
+
+#registerbutton{
+    margin-top:7px;
+    width:100%;
+    background-color:#c62828;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px;
+    margin-top:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#registerbutton:hover{
+    background-color:#b71c1c;
+    color:white;
+    font-weight:bold;
+}
+
+.rightPane {
+    background-color:#c62828;
+    border: solid 2px black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+}
+
+/*donor table list*/
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background-color:#c62828;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+}
+
+tr:nth-child(even){
+    background-color:#f9f9f9;
+}
+
+tr:hover{
+    background-color:#ffcdd2;
+}
+
+h2{
+    text-align:center;
+    color:#b71c1c;
+    margin-bottom:25px;
+}
+
+.table {
+    display:flex;
+    justify-content:center;
+}
+
+.table table{
+    background-color:white;
+    border-collapse:collapse;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tableCard{
+    background-color:white;
+    border:2px solid #c62828;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.donorFunction{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.donorFunction input{
+    width:300px;
+    height:40px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.donorFunction form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/*about page*/
+
+.headDiscription, .bottom, h2 {
+    margin-top:5px;
+    text-align: center;
+
+}
+.headDiscription {
+    background-color: white;
+    border: 2px solid #c62828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bottom {
+    background-color: white;
+    border: 2px solid #c62828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+        
+.bottom h2{
+    color: #b71c1c;
+    padding-top:30px;
+}
+
+.bottom ul {
+    padding-top:5px;
+    text-align: left;
+}
+
+.SecondDescription{
+    padding-top:10px;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+}
+
+/*Table Message on search button */
+
+.searchResults{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#TableMessage{
+    border-collapse:collapse;
+    background-color:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+#TableMessage th, #TableMessage td{
+    border:1px solid #ddd;
+    padding:10px;
+}

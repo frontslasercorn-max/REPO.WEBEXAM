@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Register Donor</title>
+</head>
+<body>
+    <header>
+    <h2>Register Donor</h2>
+    </header>
+
+<div class="navigation">
+    <form>
+    <button type="button"><a href="HomePage.html" target="_self">Home</a></button>
+    <button type="button"><a href = "about.html" target="_self">About</a></button>
+    </form>
+</div>
+<div class="rightPane"></div>
+
+<div class="document">
+    <form>
+        <h2>Registration</h2>
+     <p class="text-input" required>Full Name: </p>   
+    <input type="text" class="textfield" id="Full-Name">
+    <p class="text-input">Age: </p>
+    <input type="number" class="textfield" required id="Age" maxlength="3">
+
+    <p class="text-input">Gender:</p>
+    <input type="radio" name="pickGender" value="Male" required>Male
+    <input type="radio" name="pickGender" value="Female" required>Female
+    <p class="text-input">Blood Type: </p>
+    <input type="radio" name="Onepick" value="A+" required>A+<br>
+    <input type="radio" name="Onepick" value="A-" required>A-<br>
+    <input type="radio" name="Onepick" value="B+" required>B+<br>
+    <input type="radio" name="Onepick" value="B-" required>B-<br>
+    <input type="radio" name="Onepick" value="AB+" required>AB+<br>
+    <input type="radio" name="Onepick" value="AB-" required>AB-<br>
+    <input type="radio" name="Onepick" value="O+" required>O+<br>
+    <input type="radio" name="Onepick" value="O-" required>O-<br>
+    <p class="text-input">Contact Number: </p>
+    <input type="tel" maxlength="11" class="textfield" required id="Contact-number">
+    <p class="text-input">Home Address: </p>
+    <input type="text" class="textfield" required id="Home-Address">
+    <p class="text-input">Donation Date:</p>
+    <input type="date" required id="Donation-Date"><br>
+    <button type="button" class="textfield" id="registerbutton" onclick="register()">Register</button>
+    </form>
+</div>
+
+<h2 id="notification"></h2>
+
+<div class="donorFunction">
+    <form>
+    <p>Search:</p> <br><input type="search" placeholder="Search..." id="DonorName">
+    <br>
+    <button type="button" onclick="search()" id="SearchInput">Search</button>
+    <br>
+    <button type="button" onclick="deleteDonor()">Delete Application</button>
+    </form>
+
+</div>
+
+<br>
+
+<div class="searchResults">
+<table id="TableMessage"></table>
+</div>
+
+<div class="rightPane"></div>
+
+
+<div class="tableCard">
+
+    <h2>Donor List</h2>
+
+<div class="table">
+
+    <table>
+    <thead>
+    <tr>
+     <th>Full Name</th>
+     <th>Age</th>
+     <th>Gender</th>
+     <th>Blood Type</th>
+     <th>Contact Number</th>
+     <th>Home Address</th>
+     <th> Donation Date</th>
+     </tr>
+    </thead>
+
+    <tbody id="tableData">
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+     </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+
+<script src="BloodDonor.js"></script>
+</body>
+</html>
